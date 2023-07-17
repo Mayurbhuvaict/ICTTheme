@@ -1,12 +1,17 @@
 {
-  "name": "swag/theme-skeleton",
-  "description": "Theme skeleton plugin",
+  "name": "ict/theme-ict-theme-pluguin",
+  "description": "Theme ICTTheme plugin",
   "type": "shopware-platform-plugin",
-  "license": "MIT",
+  "license": "proprietary",
   "autoload": {
     "psr-4": {
       "ICTTheme\\": "src/"
     }
+  },
+  "require": {
+    "shopware/core": "^6.5",
+    "shopware/storefront": "^6.5",
+    "shopware/administration": "^6.5"
   },
   "extra": {
     "shopware-plugin-class": "ICTTheme\\ICTTheme",
