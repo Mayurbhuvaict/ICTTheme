@@ -1,0 +1,1 @@
+(this["webpackJsonpPlugini-c-t-theme"]=this["webpackJsonpPlugini-c-t-theme"]||[]).push([[1],{"Mu6/":function(e,t,i){"use strict";i.r(t);t.default={template:'<div class="sw-cms-preview-ict-custom-category-extension">\n    <h1>Hello</h1>\n</div>'}}}]);
