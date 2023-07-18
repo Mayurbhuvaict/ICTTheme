@@ -6,6 +6,13 @@
                     "ictElement": "Thema Option"
                 }
             }
+        },
+        "blocks": {
+            "ictTextImage": {
+                "ictImageTextBubble": {
+                    "label": "Text mit linkem oder rechtem Bild"
+                }
+            }
         }
     }
 }
