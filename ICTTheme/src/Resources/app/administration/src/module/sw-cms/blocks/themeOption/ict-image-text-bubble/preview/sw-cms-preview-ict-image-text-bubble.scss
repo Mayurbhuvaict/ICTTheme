@@ -1,10 +1,12 @@
-.sw-cms-preview-image-text-bubble {
+.sw-cms-preview-ict-image-text-bubble {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    padding: 1px;
+    background-color: black;
+    background-size: cover;
 
-    .sw-cms-preview-image-text-bubble__image {
+    .sw-cms-preview-ict-image-text-bubble__ict-image {
         height: 80px;
         width: 80px;
         margin: auto;

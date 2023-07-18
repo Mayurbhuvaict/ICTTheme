@@ -1,10 +1,10 @@
 import CMS from '../../../constant/sw-cms.constant';
-import template from './sw-cms-el-blog-image.html.twig';
-import './sw-cms-el-blog-image.scss';
+import template from './sw-cms-el-ict-image.html.twig';
+import './sw-cms-el-ict-image.scss';
 
 const { Component, Mixin, Filter } = Shopware;
 
-Component.register('sw-cms-el-blog-image', {
+Component.register('sw-cms-el-ict-image', {
     template,
 
     mixins: [
@@ -67,6 +67,7 @@ Component.register('sw-cms-el-blog-image', {
             return staticFallBackImage;
         },
 
+
         assetFilter() {
             return Filter.getByName('asset');
         },
@@ -100,8 +101,8 @@ Component.register('sw-cms-el-blog-image', {
 
     methods: {
         createdComponent() {
-            this.initElementConfig('blog-image');
-            this.initElementData('blog-image');
+            this.initElementConfig('ict-image');
+            this.initElementData('ict-image');
         },
     },
 });
