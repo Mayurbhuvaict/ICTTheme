@@ -3,11 +3,11 @@ import './config';
 import './preview';
 
 Shopware.Service('cmsService').registerCmsElement({
-    name: 'blog-image',
-    label: 'sw-cms.elements.blogImages.label',
-    component: 'sw-cms-el-blog-image',
-    configComponent: 'sw-cms-el-config-blog-image',
-    previewComponent: 'sw-cms-el-preview-blog-image',
+    name: 'ict-image',
+    label: 'sw-cms.elements.ictImages.label',
+    component: 'sw-cms-el-ict-image',
+    configComponent: 'sw-cms-el-config-ict-image',
+    previewComponent: 'sw-cms-el-preview-ict-image',
     defaultConfig: {
         media: {
             source: 'static',

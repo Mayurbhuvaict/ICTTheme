@@ -1,7 +1,7 @@
 
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import 'src/module/sw-cms/mixin/sw-cms-element.mixin';
-import 'src/module/sw-cms/elements/blog-image/component';
+import 'src/module/sw-cms/elements/ict-image/component';
 
 const mediaDataMock = {
     id: '1',
@@ -12,7 +12,7 @@ async function createWrapper() {
     const localVue = createLocalVue();
     localVue.filter('asset', Shopware.Filter.getByName('asset'));
 
-    return shallowMount(await Shopware.Component.build('sw-cms-el-blog-image'), {
+    return shallowMount(await Shopware.Component.build('sw-cms-el-ict-image'), {
         localVue,
         sync: false,
         provide: {
@@ -76,7 +76,7 @@ async function createWrapper() {
     });
 }
 
-describe('src/module/sw-cms/elements/blog-image/component', () => {
+describe('src/module/sw-cms/elements/ict-image/component', () => {
     it('should show default image if there is no config value', async () => {
         const wrapper = await createWrapper();
 

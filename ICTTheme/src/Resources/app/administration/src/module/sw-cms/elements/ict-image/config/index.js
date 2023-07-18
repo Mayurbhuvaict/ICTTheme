@@ -1,9 +1,9 @@
-import template from './sw-cms-el-config-blog-image.html.twig';
-import './sw-cms-el-config-blog-image.scss';
+import template from './sw-cms-el-config-ict-image.html.twig';
+import './sw-cms-el-config-ict-image.scss';
 
 const { Component, Mixin } = Shopware;
 
-Component.register('sw-cms-el-config-blog-image', {
+Component.register('sw-cms-el-config-ict-image', {
     template,
 
     inject: ['repositoryFactory'],
