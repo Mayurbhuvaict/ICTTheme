@@ -1,0 +1,13 @@
+.sw-cms-preview-ict-custom-category-extension {
+  .sw-cms-preview-ict-custom-category-extension__images {
+    display: flex;
+    justify-content: center;
+
+    span {
+      position: absolute;
+      top: 50%;
+      margin: 0 50px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

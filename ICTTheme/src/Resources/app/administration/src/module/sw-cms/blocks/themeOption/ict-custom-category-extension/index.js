@@ -1,3 +1,4 @@
+import CMS from '../../../constant/sw-cms.constant';
 Shopware.Component.register('sw-cms-block-ict-custom-category-extension',()=>import('./component'));
 Shopware.Component.register('sw-cms-preview-ict-custom-category-extension',()=>import('./preview'));
 
@@ -16,6 +17,19 @@ Shopware.Service('cmsService').registerCmsBlock({
       sizingMode: 'boxed',
    },
    slots: {
-      ictCustomCategoryExtension:'ictCustomCategoryExtension'
+      ictCustomCategoryExtension:{
+          type: 'ict-custom-category-extension',
+          default: {
+              config: {
+                  displayMode: { source: 'static', value: 'cover' },
+              },
+              data: {
+                  media: {
+                      value: CMS.MEDIA.SMALL.previewCamera,
+                      source: 'default',
+                  },
+              },
+          },
+      }
    },
 });
