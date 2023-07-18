@@ -23,6 +23,20 @@
     "ict": "app/storefront/src/assets/icon-pack/ict"
   },
   "config": {
+    "tabs": {
+      "header": {
+        "label": {
+          "en-GB": "Header",
+          "de-DE": "Header"
+        }
+      },
+      "footer": {
+        "label": {
+          "en-GB": "Footer",
+          "de-DE": "Footer"
+        }
+      }
+    },
     "blocks": {
       "header": {
         "label": {
@@ -145,6 +159,7 @@
         "type": "color",
         "value": "#f7f7f7",
         "editable": true,
+        "tab": "header",
         "block": "header",
         "order": 100
       },
@@ -156,6 +171,7 @@
         "type": "color",
         "value": "#fff",
         "editable": true,
+        "tab": "header",
         "block": "header",
         "order": 200
       },
@@ -167,6 +183,7 @@
         "type": "color",
         "value": "#212121",
         "editable": true,
+        "tab": "header",
         "block": "header",
         "order": 300
       },
@@ -178,6 +195,7 @@
         "type": "color",
         "value": "#f7f7f7",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -189,6 +207,7 @@
         "type": "color",
         "value": "#212121",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 200
       },
@@ -200,6 +219,7 @@
         "type": "color",
         "value": "#212121",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 300
       },
@@ -215,6 +235,7 @@
         "type": "color",
         "value": "transparent",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 300
       },
@@ -230,6 +251,7 @@
         "type": "color",
         "value": "$sw-text-color",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 125
       },
@@ -245,6 +267,7 @@
         "type": "color",
         "value": "$sw-color-brand-primary",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 150
       },
@@ -253,13 +276,10 @@
           "en-GB": "Whats up",
           "de-DE": "Whats up"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
-        },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -268,13 +288,10 @@
           "en-GB": "Face Book",
           "de-DE": "Face Book"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
-        },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -283,13 +300,10 @@
           "en-GB": "Tik Tok",
           "de-DE": "Tik Tok"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
-        },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -298,13 +312,10 @@
           "en-GB": "You tube",
           "de-DE": "You tube"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
-        },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -313,13 +324,10 @@
           "en-GB": "Instagram",
           "de-DE": "Instagram"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
-        },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       },
@@ -328,13 +336,142 @@
           "en-GB": "LinkedIn",
           "de-DE": "LinkedIn"
         },
-        "helpText": {
-          "en-GB": "Displayed for viewports of above 991px <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>",
-          "de-DE": "Wird über einem Viewport von 991px angezeigt <br><br><br>Variable:<br> <strong>sw-logo-desktop</strong>"
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-logo-desktop": {
+        "label": {
+          "en-GB": "Footer logo desktop",
+          "de-DE": "Footer logo desktop"
         },
         "type": "media",
-        "value": "app/storefront/dist/assets/logo/demo-atmos-logo-light.svg",
+        "value": "",
         "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-logo-tablet": {
+        "label": {
+          "en-GB": "Footer logo tablet",
+          "de-DE": "Footer logo tablet"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-logo-mobile": {
+        "label": {
+          "en-GB": "Footer logo mobile",
+          "de-DE": "Footer logo mobile"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-image-one": {
+        "label": {
+          "en-GB": "Footer image one",
+          "de-DE": "Footer image one"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-image-two": {
+        "label": {
+          "en-GB": "Footer image two",
+          "de-DE": "Footer image two"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-image-three": {
+        "label": {
+          "en-GB": "Footer image three",
+          "de-DE": "Footer image three"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-text-one": {
+        "label": {
+          "en-GB": "Footer text one",
+          "de-DE": "Footer text one"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-text-two": {
+        "label": {
+          "en-GB": "Footer text two",
+          "de-DE": "Footer text two"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-text-three": {
+        "label": {
+          "en-GB": "Footer text three",
+          "de-DE": "Footer text three"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-copyright-text": {
+        "label": {
+          "en-GB": "Copy right",
+          "de-DE": "Copy right"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-footer-logo-width": {
+        "label": {
+          "en-GB": "Footer logo width",
+          "de-DE": "Footer logo width"
+        },
+        "type": "text",
+        "value": "40px",
+        "editable": true,
+        "tab": "footer",
         "block": "footer",
         "order": 100
       }
