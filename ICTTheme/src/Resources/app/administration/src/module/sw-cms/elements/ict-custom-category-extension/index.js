@@ -8,6 +8,6 @@ Shopware.Service('cmsService').registerCmsElement({
     component:'sw-cms-el-ict-custom-category-extension',
     configComponent:'sw-cms-el-config-ict-custom-category-extension',
     previewComponent:'sw-cms-el-preview-ict-custom-category-extension',
-    disabledConfigInfoTextKey: 'sw-cms.elements.noltenCustomPropertyButton.infoText.navigationElement',
+    disabledConfigInfoTextKey: 'sw-cms.elements.disabledConfigInfoTextKey',
     collect: Shopware.Service('cmsService').getCollectFunction(),
 });
