@@ -1,0 +1,34 @@
+{% block layout_footer_custom_image_text %}
+    <div class="custom-image-text-sections d-flex justify-content-center">
+        <div class="custom-image-text-section">
+            {% if theme_config('sw-footer-image-one') %}
+                <img src="{{ theme_config('sw-footer-image-one') |sw_encode_url }}"
+                     alt="{{ "header.logoLink"|trans|striptags }}"
+                     class="img-fluid footer-custom-image-main-img"/>
+            {% endif %}
+            {% if theme_config('sw-footer-text-one') %}
+                <div class="">{{ theme_config('sw-footer-text-one') |trans|striptags }}</div>
+            {% endif %}
+        </div>
+        <div class="custom-image-text-section">
+            {% if theme_config('sw-footer-image-two') %}
+                <img src="{{ theme_config('sw-footer-image-two') |sw_encode_url }}"
+                     alt="{{ "header.logoLink"|trans|striptags }}"
+                     class="img-fluid footer-custom-image-main-img"/>
+            {% endif %}
+            {% if theme_config('sw-footer-text-two') %}
+                <div class="">{{ theme_config('sw-footer-text-two') |trans|striptags }}</div>
+            {% endif %}
+        </div>
+        <div class="custom-image-text-section">
+            {% if theme_config('sw-footer-image-three') %}
+                <img src="{{ theme_config('sw-footer-image-three') |sw_encode_url }}"
+                     alt="{{ "header.logoLink"|trans|striptags }}"
+                     class="img-fluid footer-custom-image-main-img"/>
+            {% endif %}
+            {% if theme_config('sw-footer-text-three') %}
+                <div class="">{{ theme_config('sw-footer-text-three') |trans|striptags }}</div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

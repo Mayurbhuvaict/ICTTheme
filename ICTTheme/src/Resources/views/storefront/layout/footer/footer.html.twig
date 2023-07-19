@@ -1,42 +1,7 @@
 {% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
 {% block layout_footer_inner_container %}
     <div class="container">
-
-        {% block layout_footer_custom_image_text %}
-            <div class="custom-image-text-sections d-flex justify-content-center">
-                <div class="custom-image-text-section">
-                    {% if theme_config('sw-footer-image-one') %}
-                        <img src="{{ theme_config('sw-footer-image-one') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-custom-image-main-img"/>
-                    {% endif %}
-                    {% if theme_config('sw-footer-text-one') %}
-                        <div class="">{{ theme_config('sw-footer-text-one') |trans|striptags }}</div>
-                    {% endif %}
-                </div>
-                <div class="custom-image-text-section">
-                    {% if theme_config('sw-footer-image-two') %}
-                        <img src="{{ theme_config('sw-footer-image-two') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-custom-image-main-img"/>
-                    {% endif %}
-                    {% if theme_config('sw-footer-text-two') %}
-                        <div class="">{{ theme_config('sw-footer-text-two') |trans|striptags }}</div>
-                    {% endif %}
-                </div>
-                <div class="custom-image-text-section">
-                    {% if theme_config('sw-footer-image-three') %}
-                        <img src="{{ theme_config('sw-footer-image-three') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-custom-image-main-img"/>
-                    {% endif %}
-                    {% if theme_config('sw-footer-text-three') %}
-                        <div class="">{{ theme_config('sw-footer-text-three') |trans|striptags }}</div>
-                    {% endif %}
-                </div>
-            </div>
-        {% endblock %}
-
+        {% sw_include '@Storefront/storefront/component/footer/ict-theme-custom-image-text.html.twig' %}
         {% block layout_footer_navigation %}
             <div
                     id="footerColumns"
@@ -203,41 +168,7 @@
             </div>
         {% endblock %}
 
-        {% block layout_footer_logo_inner %}
-            <div class="footer-logo-main text-center">
-                {% block layout_footer_logo_link %}
-                    <a class="footer-logo-main-link"
-                       href="{{ path('frontend.home.page') }}"
-                       title="{{ "header.logoLink"|trans|striptags }}">
-                        {% block layout_footer_logo_image %}
-                            <picture class="footer-logo-picture">
-                                {% block layout_footer_logo_image_tablet %}
-                                    {% if theme_config('sw-footer-logo-tablet') and theme_config('sw-logo-tablet') != theme_config('sw-logo-desktop') %}
-                                        <source srcset="{{ theme_config('sw-footer-logo-tablet') |sw_encode_url }}"
-                                                media="(min-width: {{ theme_config('breakpoint.md') }}px) and (max-width: {{ theme_config('breakpoint.lg') - 1 }}px)">
-                                    {% endif %}
-                                {% endblock %}
-
-                                {% block layout_footer_logo_image_mobile %}
-                                    {% if theme_config('sw-footer-logo-mobile') and theme_config('sw-logo-mobile') != theme_config('sw-logo-desktop') %}
-                                        <source srcset="{{ theme_config('sw-footer-logo-mobile') |sw_encode_url }}"
-                                                media="(max-width: {{ theme_config('breakpoint.md') - 1 }}px)">
-                                    {% endif %}
-                                {% endblock %}
-
-                                {% block layout_footer_logo_image_default %}
-                                    {% if theme_config('sw-footer-logo-desktop') %}
-                                        <img src="{{ theme_config('sw-footer-logo-desktop') |sw_encode_url }}"
-                                             alt="{{ "header.logoLink"|trans|striptags }}"
-                                             class="img-fluid footer-logo-main-img"/>
-                                    {% endif %}
-                                {% endblock %}
-                            </picture>
-                        {% endblock %}
-                    </a>
-                {% endblock %}
-            </div>
-        {% endblock %}
+        {% sw_include '@Storefront/storefront/component/footer/ict-theme-footer-logo.html.twig' %}
 
         {% block layout_footer_navigation_hotline %}
             <div class="text-center footer-column js-footer-column mt-3">
@@ -272,57 +203,7 @@
             </div>
         {% endblock %}
 
-        {% block layout_footer_social_media_icon %}
-            <div class="text-center social-icons footer-column js-footer-column mt-3">
-                {% block layout_footer_whatsapp_logo_image_default %}
-                    {% if theme_config('sw-social-whats-app-logo') %}
-                        <img src="{{ theme_config('sw-social-whats-app-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img w-40"/>
-                    {% endif %}
-                {% endblock %}
-
-                {% block layout_footer_facebook_logo_image_default %}
-                    {% if theme_config('sw-social-face-book-logo') %}
-                        <img src="{{ theme_config('sw-social-face-book-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img"/>
-                    {% endif %}
-                {% endblock %}
-
-                {% block layout_footer_tiktok_logo_image_default %}
-                    {% if theme_config('sw-social-tik-tok-logo') %}
-                        <img src="{{ theme_config('sw-social-tik-tok-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img"/>
-                    {% endif %}
-                {% endblock %}
-
-                {% block layout_footer_youtube_logo_image_default %}
-                    {% if theme_config('sw-social-youtube-logo') %}
-                        <img src="{{ theme_config('sw-social-youtube-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img"/>
-                    {% endif %}
-                {% endblock %}
-
-                {% block layout_footer_intsagram_logo_image_default %}
-                    {% if theme_config('sw-social-instagram-logo') %}
-                        <img src="{{ theme_config('sw-social-instagram-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img"/>
-                    {% endif %}
-                {% endblock %}
-
-                {% block layout_footer_linkedin_logo_image_default %}
-                    {% if theme_config('sw-social-linkedin-logo') %}
-                        <img src="{{ theme_config('sw-social-linkedin-logo') |sw_encode_url }}"
-                             alt="{{ "header.logoLink"|trans|striptags }}"
-                             class="img-fluid footer-logo-main-img"/>
-                    {% endif %}
-                {% endblock %}
-            </div>
-        {% endblock %}
+        {% sw_include '@Storefront/storefront/component/footer/ict-theme-social-media.html.twig' %}
     </div>
 
     {% block layout_footer_bottom %}
