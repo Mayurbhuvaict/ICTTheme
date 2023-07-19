@@ -1,9 +1,8 @@
-<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
 {% block sw_cms_element_ict_text %}
 <div class="sw-cms-el-ict-text">
     <div
         v-if="element.config.content.source === 'mapped'"
-        class="sw-cms-el-text__mapping-preview content-editor"
+        class="sw-cms-el-ict-text__mapping-preview content-editor"
         v-html="$sanitize(demoValue)"
     ></div>
 
