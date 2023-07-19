@@ -41,7 +41,7 @@ export default {
         position(){
             if (!this.element?.data?.position){
                 return {
-                    position: true,
+                    position: 'left',
                 };
             }
             return this.element.data.position;
@@ -113,8 +113,8 @@ export default {
 
     methods: {
         createdComponent() {
-            this.initElementConfig('image');
-            this.initElementData('image');
+            this.initElementConfig('ictImage');
+            this.initElementData('ictImage');
         },
     },
 };

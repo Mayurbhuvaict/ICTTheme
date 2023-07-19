@@ -29,7 +29,7 @@ Shopware.Service('cmsService').registerCmsBlock({
     },
     slots: {
         ictImage: {
-            type: 'image',
+            type: 'ictech-image-text-bubble',
             default: {
                 config: {
                     displayMode: { source: 'static', value: 'standard' },

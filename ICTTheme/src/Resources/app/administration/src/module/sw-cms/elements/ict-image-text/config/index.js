@@ -47,7 +47,7 @@ export default {
 
     methods: {
         createdComponent() {
-            this.initElementConfig('ictech-image-text-bubble');
+            this.initElementConfig('ictImage');
         },
 
         async onImageUpload({ targetId }) {
