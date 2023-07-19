@@ -2,6 +2,9 @@
   "header": {
     "topBar": {
       "topBarText": "Jetzt Geschenksets entdecken"
+    },
+    "marketing": {
+      "marketingText": "Marketingtext"
     }
   },
   "footer": {

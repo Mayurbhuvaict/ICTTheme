@@ -187,6 +187,42 @@
         "block": "header",
         "order": 300
       },
+      "sw-top-header-marketing-text-one": {
+        "label": {
+          "en-GB": "Marketing text",
+          "de-DE": "Marketing text"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "header",
+        "order": 100
+      },
+      "sw-top-header-marketing-text-two": {
+        "label": {
+          "en-GB": "Marketing text",
+          "de-DE": "Marketing text"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "header",
+        "order": 100
+      },
+      "sw-top-header-marketing-media": {
+        "label": {
+          "en-GB": "Marketing media",
+          "de-DE": "Marketing media"
+        },
+        "type": "media",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "header",
+        "order": 100
+      },
       "sw-footer-background": {
         "label": {
           "en-GB": "Footer background",
@@ -228,10 +264,6 @@
           "en-GB": "Background",
           "de-DE": "Background"
         },
-        "helpText": {
-          "en-GB": "Variable:<br> <strong>ict-footer-social-column-bg</strong>",
-          "de-DE": "Variable:<br> <strong>ict-footer-social-column-bg</strong>"
-        },
         "type": "color",
         "value": "transparent",
         "editable": true,
@@ -243,10 +275,6 @@
         "label": {
           "en-GB": "Text",
           "de-DE": "Text"
-        },
-        "helpText": {
-          "en-GB": "Variable:<br> <strong>ict-footer-social-column-color</strong>",
-          "de-DE": "Variable:<br> <strong>ict-footer-social-column-color</strong>"
         },
         "type": "color",
         "value": "$sw-text-color",
@@ -260,10 +288,6 @@
           "en-GB": "Text:hover",
           "de-DE": "Text:hover"
         },
-        "helpText": {
-          "en-GB": "Variable:<br> <strong>ict-footer-social-column-hover-color</strong>",
-          "de-DE": "Variable:<br> <strong>ict-footer-social-column-hover-color</strong>"
-        },
         "type": "color",
         "value": "$sw-color-brand-primary",
         "editable": true,
@@ -273,10 +297,10 @@
       },
       "sw-social-whats-app-logo": {
         "label": {
-          "en-GB": "Whats up",
-          "de-DE": "Whats up"
+          "en-GB": "Whats App url",
+          "de-DE": "Whats App url"
         },
-        "type": "media",
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
@@ -285,10 +309,10 @@
       },
       "sw-social-face-book-logo": {
         "label": {
-          "en-GB": "Face Book",
-          "de-DE": "Face Book"
+          "en-GB": "Facebook url",
+          "de-DE": "Facebook url"
         },
-        "type": "media",
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
@@ -297,10 +321,10 @@
       },
       "sw-social-tik-tok-logo": {
         "label": {
-          "en-GB": "Tik Tok",
-          "de-DE": "Tik Tok"
+          "en-GB": "Tik Tok url",
+          "de-DE": "Tik Tok url"
         },
-        "type": "media",
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
@@ -309,10 +333,10 @@
       },
       "sw-social-youtube-logo": {
         "label": {
-          "en-GB": "You tube",
-          "de-DE": "You tube"
+          "en-GB": "You-tube url",
+          "de-DE": "You-tube url"
         },
-        "type": "media",
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
@@ -321,10 +345,10 @@
       },
       "sw-social-instagram-logo": {
         "label": {
-          "en-GB": "Instagram",
-          "de-DE": "Instagram"
+          "en-GB": "Instagram url",
+          "de-DE": "Instagram url"
         },
-        "type": "media",
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
@@ -333,10 +357,82 @@
       },
       "sw-social-linkedin-logo": {
         "label": {
-          "en-GB": "LinkedIn",
-          "de-DE": "LinkedIn"
+          "en-GB": "LinkedIn url",
+          "de-DE": "LinkedIn url"
         },
-        "type": "media",
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-Pinterest-logo": {
+        "label": {
+          "en-GB": "Pinterest url",
+          "de-DE": "Pinterest url"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-Amazon-logo": {
+        "label": {
+          "en-GB": "Amazon url",
+          "de-DE": "Amazon url"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-Vimeo-logo": {
+        "label": {
+          "en-GB": "Vimeo url",
+          "de-DE": "Vimeo url"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-flickr-logo": {
+        "label": {
+          "en-GB": "Flickr url",
+          "de-DE": "Flickr url"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-xing-logo": {
+        "label": {
+          "en-GB": "Xing url",
+          "de-DE": "Xing url"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "footer",
+        "block": "footer",
+        "order": 100
+      },
+      "sw-social-twitter-logo": {
+        "label": {
+          "en-GB": "Twitter url",
+          "de-DE": "Twitter url"
+        },
+        "type": "text",
         "value": "",
         "editable": true,
         "tab": "footer",
