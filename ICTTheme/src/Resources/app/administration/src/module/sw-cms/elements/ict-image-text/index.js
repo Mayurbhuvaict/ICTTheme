@@ -19,15 +19,15 @@ Shopware.Component.register('sw-cms-el-ict-image-text', () => import('./componen
  * @package content
  */
 Shopware.Service('cmsService').registerCmsElement({
-    name: 'ict-image-text',
-    label: 'sw-cms.elements.ictImages.label',
+    name: 'ict-image-text-bubble',
+    label: 'sw-cms.elements.ictechImages.label',
     component: 'sw-cms-el-ict-image-text',
     configComponent: 'sw-cms-el-config-ict-image-text',
     previewComponent: 'sw-cms-el-preview-ict-image-text',
     defaultConfig: {
         position:{
             source: 'static',
-            value: false,
+            value: 'left',
         },
         media: {
             source: 'static',
