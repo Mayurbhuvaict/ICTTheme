@@ -19,7 +19,7 @@ export default {
 
     methods: {
         createdComponent() {
-            this.initElementConfig('ict-text');
+            this.initElementConfig('text');
         },
 
         onBlur(content) {

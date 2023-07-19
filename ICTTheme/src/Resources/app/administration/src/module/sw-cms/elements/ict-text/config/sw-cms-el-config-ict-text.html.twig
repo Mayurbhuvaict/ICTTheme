@@ -1,14 +1,13 @@
-<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-{% block sw_cms_el_config_text %}
+{% block sw_cms_el_config_ict_text %}
 <sw-tabs
-    position-identifier="sw-cms-element-config-text"
-    class="sw-cms-el-config-text__tabs"
+    position-identifier="sw-cms-element-config-ict-text"
+    class="sw-cms-el-config-ict-text__tabs"
     default-item="content"
 >
 
     <template #default="{ active }">
         <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-        {% block sw_cms_el_config_text_tab_content %}
+        {% block sw_cms_el_config_ict_text_tab_content %}
         <sw-tabs-item
             :title="$tc('sw-cms.elements.general.config.tab.content')"
             name="content"
@@ -17,8 +16,10 @@
             {{ $tc('sw-cms.elements.general.config.tab.content') }}
         </sw-tabs-item>
         {% endblock %}
+
+
         <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-        {% block sw_cms_el_text_config_tab_options %}
+        {% block sw_cms_el_ict_text_config_tab_options %}
         <sw-tabs-item
             :title="$tc('sw-cms.elements.general.config.tab.settings')"
             name="settings"
@@ -33,7 +34,7 @@
         #content="{ active }"
     >
         <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-        {% block sw_cms_el_text_config_content %}
+        {% block sw_cms_el_ict_text_config_content %}
         <sw-container
             v-if="active === 'content'"
             class="sw-cms-el-config-text__tab-content"
@@ -62,13 +63,13 @@
         {% endblock %}
 
         <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-        {% block sw_cms_el_text_config_settings %}
+        {% block sw_cms_el_ict_text_config_settings %}
         <sw-container
             v-if="active === 'settings'"
             class="sw-cms-el-config-text__tab-settings"
         >
             <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
-            {% block sw_cms_el_text_config_settings_vertical_align %}
+            {% block sw_cms_el_ict_text_config_settings_vertical_align %}
             <sw-select-field
                 v-model="element.config.verticalAlign.value"
                 :label="$tc('sw-cms.elements.general.config.label.verticalAlign')"
@@ -83,10 +84,26 @@
                 <option value="flex-end">
                     {{ $tc('sw-cms.elements.general.config.label.verticalAlignBottom') }}
                 </option>
+
+
             </sw-select-field>
+                <div class="sw-cms-el-config-ict-text__link">
+                    <sw-dynamic-url-field
+                            {#                    v-model="element.config.url.value"#}
+                    />
+                    <sw-field
+                            {#v-model="element.config.newTab.value"#}
+                            class="sw-cms-el-config-ict-text__link-tab"
+                            type="switch"
+                            :label="$tc('sw-cms.elements.ict.text.config.label.linkNewTab')"
+                    />
+                </div>
             {% endblock %}
         </sw-container>
+
+
+
         {% endblock %}
-    </template>
+           </template>
 </sw-tabs>
 {% endblock %}
