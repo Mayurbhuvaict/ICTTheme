@@ -1,6 +1,6 @@
 //blocks
 import './module/sw-cms/blocks/themeOption/ict-custom-category-extension';
-import './module/sw-cms/blocks/themeOption/ict-text-image';
+import './module/sw-cms/blocks/themeOption/ict-text-image/ictech-image-text-bubble';
 import './module/sw-cms/blocks/themeOption/ict-image-text-bubble';
 
 

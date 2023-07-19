@@ -8,6 +8,9 @@
             }
         },
         "blocks": {
+            "ictCustomCategoryExtension": {
+                "label": "Benutzerdefinierte Kategorie-Navigation"
+            },
             "ictTextImage": {
                 "ictImageTextBubble": {
                     "label": "Text mit linkem oder rechtem Bild"

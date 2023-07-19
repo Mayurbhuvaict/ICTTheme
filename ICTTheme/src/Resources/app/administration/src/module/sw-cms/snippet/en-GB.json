@@ -8,6 +8,9 @@
             }
         },
         "blocks": {
+          "ictCustomCategoryExtension": {
+            "label": "Custom Category Navigation"
+          },
           "ictImageText": {
                 "label": "ICT Image Bubble"
             },

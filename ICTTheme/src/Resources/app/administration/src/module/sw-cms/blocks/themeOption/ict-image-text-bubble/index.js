@@ -1,4 +1,4 @@
-import CMS from '../../constant/sw-cms.constant';
+import CMS from '../../../constant/sw-cms.constant';
 /**
  * @private
  * @package content
