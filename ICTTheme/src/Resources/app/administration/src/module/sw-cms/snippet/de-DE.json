@@ -15,7 +15,16 @@
                 "ictImageTextBubble": {
                     "label": "Text mit linkem oder rechtem Bild"
                 }
+            },
+            "ictCategoryImageText": {
+                "label": "Kategorie Bild Text"
             }
+        },
+        "elements": {
+            "ictImages": {
+                "label": "ICT Image"
+            },
+            "disabledConfigInfoTextKey": "Die Produktdaten für dieses Element werden automatisch über die Kategoriezuweisungen befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
         }
     }
 }

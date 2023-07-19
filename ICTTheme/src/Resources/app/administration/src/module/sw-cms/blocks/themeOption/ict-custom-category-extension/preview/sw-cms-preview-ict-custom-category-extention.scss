@@ -1,13 +1,25 @@
 .sw-cms-preview-ict-custom-category-extension {
-  .sw-cms-preview-ict-custom-category-extension__images {
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  background: #FFFFFF;
+  font-size: 22px;
+  color: #52667AFF;
+  border-radius: 5px;
+  padding: 20px;
 
-    span {
-      position: absolute;
-      top: 50%;
-      margin: 0 50px;
-      transform: translate(-50%, -50%);
+  .sw-cms-block-category-placeholder-listing div {
+    margin: 10px 0;
+    height: 0.7em;
+    border-radius: 4px;
+    background-color: #f0f2f5;
+
+    &.sw-cms-block-ict-custom-category-extension__placeholder--subcategory {
+      margin: 7px 0 7px 30px;
     }
+  }
+
+  hr {
+    max-width: 90%;
+    margin: 10px auto;
+    border: 1px solid #D1D9E0FF;
   }
 }
