@@ -4,7 +4,7 @@ Shopware.Component.register('sw-cms-preview-ict-custom-category-extension',()=>i
 
 Shopware.Service('cmsService').registerCmsBlock({
    name:'ict-custom-category-extension',
-   label:'sw-cms.block.ictCustomCategoryExtension.label',
+   label:'sw-cms.blocks.ictCustomCategoryExtension.label',
    category:'ict-cms-elements',
    component:'sw-cms-block-ict-custom-category-extension',
    previewComponent:'sw-cms-preview-ict-custom-category-extension',
