@@ -47,17 +47,36 @@
                 <sw-text-editor
                     :value="element.config.content.value"
                     :allow-inline-data-mapping="true"
+                    :upload-tag="uploadTag"
                     sanitize-input
                     enable-transparent-background
                     @input="onInput"
                     @blur="onBlur"
                 />
+                <div
+                        slot="preview"
+                        slot-scope="{ demoValue }"
+                        class="sw-cms-el-config-ict-text__mapping-preview"
+                >
+                    <img
+                            v-if="demoValue.url"
+                            :src="demoValue.url"
+                            alt=""
+                    >
+                    <sw-alert
+                            v-else
+                            class="sw-cms-el-config-ict-text__preview-info"
+                            variant="info"
+                    >
+                        {{ $tc('sw-cms.detail.label.mappingEmptyPreview') }}
+                    </sw-alert>
+                </div>
 
-                <template #preview="{ demoValue }">
-                    <div class="sw-cms-el-config-text__mapping-preview">
-                        <div v-html="$sanitize(demoValue)"></div>
-                    </div>
-                </template>
+{#                <template #preview="{ demoValue }">#}
+{#                    <div class="sw-cms-el-config-text__mapping-preview">#}
+{#                        <div v-html="$sanitize(demoValue)"></div>#}
+{#                    </div>#}
+{#                </template>#}
             </sw-cms-mapping-field>
         </sw-container>
         {% endblock %}
@@ -89,7 +108,7 @@
             </sw-select-field>
                 <div class="sw-cms-el-config-ict-text__link">
                     <sw-dynamic-url-field
-                            {#                    v-model="element.config.url.value"#}
+                            v-model="element.config.url.value"
                     />
                     <sw-field
                             {#v-model="element.config.newTab.value"#}
