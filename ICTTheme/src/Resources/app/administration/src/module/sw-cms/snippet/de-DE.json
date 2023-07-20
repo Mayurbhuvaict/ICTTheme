@@ -18,12 +18,25 @@
             },
             "ictCategoryImageText": {
                 "label": "Kategorie Bild Text"
+            },
+            "IctText": {
+                "label": "ICT Text"
             }
         },
         "elements": {
             "ictImages": {
                 "label": "ICT Image"
             },
+             "ictText": {
+                "label": "ICT-Texte"
+            },
+            "ictSwitchImageText": {
+                "config": {
+                    "label": {
+                        "ictTextImage": "Bild Position",
+                        "imageLeft": "Links",
+                        "imageRight": "Rechts"
+                    },
             "disabledConfigInfoTextKey": "Die Produktdaten für dieses Element werden automatisch über die Kategoriezuweisungen befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
         }
     }

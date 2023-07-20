@@ -1,20 +1,20 @@
 import CMS from '../../../constant/sw-cms.constant';
-import template from './sw-cms-el-ict-image-text.html.twig';
-import './sw-cms-el-ict-image-text.scss';
+import template from './sw-cms-el-ict-switch-image-text.html.twig';
+import './sw-cms-el-ict-switch-image-text.scss';
 
-const { Mixin, Filter } = Shopware;
-
-/**
- * @private
- * @package content
- */
+const {Mixin, Filter} = Shopware;
 export default {
     template,
-
     mixins: [
         Mixin.getByName('cms-element'),
     ],
 
+    data() {
+        return {
+            editable: true,
+            demoValue: '',
+        };
+    },
     computed: {
         displayModeClass() {
             if (this.element.config.displayMode.value === 'standard') {
@@ -31,22 +31,19 @@ export default {
                 this.element.config.minHeight.value !== 0 ? this.element.config.minHeight.value : '340px',
             };
         },
-
-        imgStyles() {
-            return {
-                'align-self': this.element.config.verticalAlign.value || null,
-            };
-        },
-
-        position(){
-            if (!this.element?.data?.position){
+        position() {
+            if (!this.element?.data?.position) {
                 return {
                     position: 'left',
                 };
             }
             return this.element.data.position;
         },
-
+        imgStyles() {
+            return {
+                'align-self': this.element.config.verticalAlign.value || null,
+            };
+        },
         mediaUrl() {
             const fallBackImageFileName = CMS.MEDIA.previewMountain.slice(CMS.MEDIA.previewMountain.lastIndexOf('/') + 1);
             const staticFallBackImage = this.assetFilter(`administration/static/img/cms/${fallBackImageFileName}`);
@@ -79,24 +76,26 @@ export default {
 
             return staticFallBackImage;
         },
-
         assetFilter() {
             return Filter.getByName('asset');
         },
-
         mediaConfigValue() {
             return this.element?.config?.sliderItems?.value;
         },
     },
-
     watch: {
         cmsPageState: {
             deep: true,
             handler() {
                 this.$forceUpdate();
+                this.updateDemoValue();
             },
         },
-
+        'element.config.content.source': {
+            handler() {
+                this.updateDemoValue();
+            },
+        },
         mediaConfigValue(value) {
             const mediaId = this.element?.data?.media?.id;
             const isSourceStatic = this.element?.config?.media?.source === 'static';
@@ -106,15 +105,30 @@ export default {
             }
         },
     },
-
     created() {
         this.createdComponent();
     },
-
     methods: {
         createdComponent() {
-            this.initElementConfig('ictImage');
-            this.initElementData('ictImage');
+            this.initElementConfig('ict-switch-image-text');
+            this.initElementData('ict-switch-image-text');
+        },
+        updateDemoValue() {
+            if (this.element.config.content.source === 'mapped') {
+                this.demoValue = this.getDemoValue(this.element.config.content.value);
+            }
+        },
+        onBlur(content) {
+            this.emitChanges(content);
+        },
+        onInput(content) {
+            this.emitChanges(content);
+        },
+        emitChanges(content) {
+            if (content !== this.element.config.content.value) {
+                this.element.config.content.value = content;
+                this.$emit('element-update', this.element);
+            }
         },
     },
 };
