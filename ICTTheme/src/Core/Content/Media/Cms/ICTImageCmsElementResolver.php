@@ -17,10 +17,8 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\Log\Package;
 
 #[Package('content')]
-class ImageCmsElementResolver extends AbstractCmsElementResolver
+class ICTImageCmsElementResolver extends AbstractCmsElementResolver
 {
-    public const CMS_DEFAULT_ASSETS_PATH = '/bundles/storefront/assets/default/cms/';
-
     private AbstractDefaultMediaResolver $mediaResolver;
 
     /**
@@ -33,7 +31,7 @@ class ImageCmsElementResolver extends AbstractCmsElementResolver
 
     public function getType(): string
     {
-        return 'blog-image';
+        return 'ict-image';
     }
 
     public function collect(CmsSlotEntity $slot, ResolverContext $resolverContext): ?CriteriaCollection

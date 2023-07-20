@@ -13,6 +13,12 @@ export default {
         Mixin.getByName('cms-element'),
     ],
 
+    computed: {
+
+        uploadTag() {
+            return `cms-element-text-config-${this.element.id}`;
+        }
+    },
     created() {
         this.createdComponent();
     },
