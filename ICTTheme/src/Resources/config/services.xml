@@ -9,6 +9,10 @@
             <tag name="shopware.cms.data_resolver" />
             <argument type="service" id="Shopware\Core\Content\Media\Cms\DefaultMediaResolver"/>
         </service>
+        <service id="ICTTheme\Core\Content\Media\Cms\IctechImageTextLeftRightPositionCmsElementResolver">
+            <tag name="shopware.cms.data_resolver" />
+            <argument type="service" id="Shopware\Core\Content\Media\Cms\DefaultMediaResolver"/>
+        </service>
         <!-- Resolver -->
         <!-- subscriber  -->
         <service id="ICTTheme\Storefront\Page\IctThemeCategoryNavigationSubscriber">

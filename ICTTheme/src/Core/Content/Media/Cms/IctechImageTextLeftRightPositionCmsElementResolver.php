@@ -19,23 +19,18 @@ use Shopware\Core\Framework\Log\Package;
 #[Package('content')]
 class IctechImageTextLeftRightPositionCmsElementResolver extends AbstractCmsElementResolver
 {
-    /**
-     * @internal
-     */
     public function __construct(private readonly AbstractDefaultMediaResolver $mediaResolver)
     {
     }
 
     public function getType(): string
     {
-        return 'ict-image-text';
+        return 'ict-switch-image-text';
     }
 
     public function collect(CmsSlotEntity $slot, ResolverContext $resolverContext): ?CriteriaCollection
     {
-
         $mediaConfig = $slot->getFieldConfig()->get('media');
-
         if (
             $mediaConfig === null
             || $mediaConfig->isMapped()
@@ -49,16 +44,11 @@ class IctechImageTextLeftRightPositionCmsElementResolver extends AbstractCmsElem
 
         $criteriaCollection = new CriteriaCollection();
         $criteriaCollection->add('media_' . $slot->getUniqueIdentifier(), MediaDefinition::class, $criteria);
-
         return $criteriaCollection;
-
-
-
     }
 
     public function enrich(CmsSlotEntity $slot, ResolverContext $resolverContext, ElementDataCollection $result): void
     {
-//        dd('hiiii');
         $config = $slot->getFieldConfig();
         $image = new ImageStruct();
         $slot->setData($image);
@@ -75,19 +65,16 @@ class IctechImageTextLeftRightPositionCmsElementResolver extends AbstractCmsElem
                     $image->setUrl($url);
                 }
             }
-
             $newTabConfig = $config->get('newTab');
             if ($newTabConfig !== null) {
                 $image->setNewTab($newTabConfig->getBoolValue());
             }
         }
-
         $mediaConfig = $config->get('media');
         if ($mediaConfig && $mediaConfig->getValue()) {
             $this->addMediaEntity($slot, $image, $result, $mediaConfig, $resolverContext);
         }
     }
-
     private function addMediaEntity(
         CmsSlotEntity $slot,
         ImageStruct $image,
@@ -102,7 +89,6 @@ class IctechImageTextLeftRightPositionCmsElementResolver extends AbstractCmsElem
                 $image->setMedia($media);
             }
         }
-
         if ($config->isMapped() && $resolverContext instanceof EntityResolverContext) {
             $media = $this->resolveEntityValue($resolverContext->getEntity(), $config->getStringValue());
 
@@ -111,7 +97,6 @@ class IctechImageTextLeftRightPositionCmsElementResolver extends AbstractCmsElem
                 $image->setMedia($media);
             }
         }
-
         if ($config->isStatic()) {
             $image->setMediaId($config->getStringValue());
 

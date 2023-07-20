@@ -17,6 +17,9 @@
       "ictImageText": {
         "label": "ICT Image Bubble"
       },
+       "IctText": {
+          "label": "ICT Text"
+        }
       "ictTextImage": {
         "ictImageTextBubble": {
           "label": "Text with Left or Right Image"
@@ -27,6 +30,16 @@
       "ictImages": {
         "label": "ICT Image"
       },
+      "ictText": {
+        "label": "ICT-Texts"
+      },
+      "ictSwitchImageText": {
+        "config": {
+          "label": {
+            "ictTextImage": "Image Position",
+            "imageLeft": "Left",
+            "imageRight": "Right"
+          },
       "disabledConfigInfoTextKey": "This element's navigation data is automatically loaded by the category associated with this layout. The content just shows a sample preview."
     }
   }
