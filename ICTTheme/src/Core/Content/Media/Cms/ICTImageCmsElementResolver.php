@@ -19,14 +19,12 @@ use Shopware\Core\Framework\Log\Package;
 #[Package('content')]
 class ICTImageCmsElementResolver extends AbstractCmsElementResolver
 {
-    private AbstractDefaultMediaResolver $mediaResolver;
 
     /**
      * @internal
      */
-    public function __construct(AbstractDefaultMediaResolver $mediaResolver)
+    public function __construct(private readonly AbstractDefaultMediaResolver $mediaResolver)
     {
-        $this->mediaResolver = $mediaResolver;
     }
 
     public function getType(): string
@@ -51,6 +49,7 @@ class ICTImageCmsElementResolver extends AbstractCmsElementResolver
 
         $criteriaCollection = new CriteriaCollection();
         $criteriaCollection->add('media_' . $slot->getUniqueIdentifier(), MediaDefinition::class, $criteria);
+
         return $criteriaCollection;
     }
 
