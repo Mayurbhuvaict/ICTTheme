@@ -33,6 +33,12 @@
       "ictText": {
         "label": "ICT-Texts"
       },
+       "ictTab": {
+        "label": "Open link in new tab"
+      },
+      "ictImage": {
+        "label": "Open link in new tab"
+      },
       "ictSwitchImageText": {
         "config": {
           "label": {
