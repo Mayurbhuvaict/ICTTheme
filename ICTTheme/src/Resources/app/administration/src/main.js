@@ -10,6 +10,8 @@ import './module/sw-cms/component';
 
 //elements
 import './module/sw-cms/elements/ict-custom-category-extension';
+import './module/sw-cms/blocks/themeOption/ict-switch-image-text';
+import './module/sw-cms/elements/ict-switch-image-text';
 import './module/sw-cms/elements/ict-image-text';
 import './module/sw-cms/elements/ict-image';
 import './module/sw-cms/elements/ict-text'
