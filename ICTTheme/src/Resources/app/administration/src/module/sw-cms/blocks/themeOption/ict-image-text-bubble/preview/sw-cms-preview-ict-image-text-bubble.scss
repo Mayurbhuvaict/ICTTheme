@@ -1,15 +1,16 @@
 .sw-cms-preview-ict-image-text-bubble {
-    display: grid;
+    //display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2px;
     padding: 1px;
-    background-color: black;
     background-size: cover;
+    display: flex;
+    //justify-content: center;
 
     .sw-cms-preview-ict-image-text-bubble__ict-image {
-        height: 80px;
-        width: 80px;
-        margin: auto;
+        height: 60px;
+        width: 55px;
+        margin: 0 -1px;
         border-radius: 50%;
         background-clip: padding-box;
         overflow: hidden;

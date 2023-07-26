@@ -72,8 +72,8 @@
         {% block sw_cms_element_ict_image_config_min_height %}
         <sw-text-field
             v-model="element.config.minHeight.value"
-            :label="$tc('sw-cms.elements.ictImages.config.label.minHeight')"
-{#            :placeholder="$tc('sw-cms.elements.ictImages.config.placeholder.enterMinHeight')"#}
+            :label="$tc('sw-cms.elements.image.config.label.minHeight')"
+            :placeholder="$tc('sw-cms.elements.image.config.placeholder.enterMinHeight')"
             @input="onChangeMinHeight"
         />
         {% endblock %}
@@ -109,7 +109,7 @@
             v-model="element.config.newTab.value"
             class="sw-cms-el-config-ict-image__link-tab"
             type="switch"
-            :label="$tc('sw-cms.elements.ict.image.config.label.linkNewTab')"
+            :label="$tc('sw-cms.elements.ictImage.label')"
         />
     </div>
     {% endblock %}

@@ -65,8 +65,8 @@
       },
       "sw-font-size-xs": {
         "label": {
-          "en-GB": "Font size",
-          "de-DE": "Lettertypegrootte"
+          "en-GB": "Font size for xs",
+          "de-DE": "Schriftgröße für xs"
         },
         "type": "text",
         "value": "11px",
@@ -76,8 +76,8 @@
       },
       "sw-font-size-sm": {
         "label": {
-          "en-GB": "Font size",
-          "de-DE": "Lettertypegrootte"
+          "en-GB": "Font size for sm",
+          "de-DE": "Schriftgröße für sm"
         },
         "type": "text",
         "value": "12px",
@@ -87,8 +87,8 @@
       },
       "sw-font-size-content": {
         "label": {
-          "en-GB": "Font size",
-          "de-DE": "Lettertypegrootte"
+          "en-GB": "Font size for content",
+          "de-DE": "Schriftgröße für Inhalte"
         },
         "type": "text",
         "value": "14px",
@@ -98,8 +98,8 @@
       },
       "sw-font-size-heading": {
         "label": {
-          "en-GB": "Font size",
-          "de-DE": "Lettertypegrootte"
+          "en-GB": "Font size for heading",
+          "de-DE": "Schriftgröße für Überschrift"
         },
         "type": "text",
         "value": "16px",
@@ -107,49 +107,107 @@
         "block": "typography",
         "order": 900
       },
-      "sw-font-weight-400": {
+      "sw-font-weight-base": {
         "label": {
-          "en-GB": "Font weight",
-          "de-DE": "Lettertype dikte"
+          "en-GB": "Base font weight",
+          "de-DE": "Basis Schriftstärke"
         },
         "type": "text",
         "value": "400",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "400",
+              "label": {
+                "en-GB": "Regular - 400",
+                "de-DE": "Regular - 400"
+              }
+            },
+            {
+              "value": "500",
+              "label": {
+                "en-GB": "Medium - 500",
+                "de-DE": "Medium - 500"
+              }
+            },
+            {
+              "value": "600",
+              "label": {
+                "en-GB": "Semi-bold - 600",
+                "de-DE": "Semi-Bold - 600"
+              }
+            },
+            {
+              "value": "700",
+              "label": {
+                "en-GB": "Bold - 700",
+                "de-DE": "Bold - 700"
+              }
+            },
+            {
+              "value": "800",
+              "label": {
+                "en-GB": "Extra Bold - 800",
+                "de-DE": "Extra Bold - 800"
+              }
+            }
+          ]
+        },
         "editable": true,
         "block": "typography",
-        "order": 1000
+        "order": 100
       },
-      "sw-font-weight-500": {
+      "sw-headings-font-weight": {
         "label": {
-          "en-GB": "Font weight",
-          "de-DE": "Lettertype dikte"
+          "en-GB": "Headlines font weight",
+          "de-DE": "Überschriften Schriftstärke"
         },
         "type": "text",
         "value": "500",
-        "editable": true,
-        "block": "typography",
-        "order": 1100
-      },
-      "sw-font-weight-600": {
-        "label": {
-          "en-GB": "Font weight",
-          "de-DE": "Lettertype dikte"
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "400",
+              "label": {
+                "en-GB": "Regular - 400",
+                "de-DE": "Regular - 400"
+              }
+            },
+            {
+              "value": "500",
+              "label": {
+                "en-GB": "Medium - 500",
+                "de-DE": "Medium - 500"
+              }
+            },
+            {
+              "value": "600",
+              "label": {
+                "en-GB": "Semi-bold - 600",
+                "de-DE": "Semi-Bold - 600"
+              }
+            },
+            {
+              "value": "700",
+              "label": {
+                "en-GB": "Bold - 700",
+                "de-DE": "Bold - 700"
+              }
+            },
+            {
+              "value": "800",
+              "label": {
+                "en-GB": "Extra Bold - 800",
+                "de-DE": "Extra Bold - 800"
+              }
+            }
+          ]
         },
-        "type": "text",
-        "value": "600",
         "editable": true,
         "block": "typography",
-        "order": 1200
-      },
-      "sw-font-weight-700": {
-        "label": {
-          "en-GB": "Font weight",
-          "de-DE": "Lettertype dikte"
-        },
-        "type": "text",
-        "value": "700",
-        "editable": true,
-        "block": "typography",
-        "order": 1300
+        "order": 125
       },
       "sw-top-header-background": {
         "label": {

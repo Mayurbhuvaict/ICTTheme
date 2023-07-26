@@ -13,13 +13,19 @@ export default {
         Mixin.getByName('cms-element'),
     ],
 
+    computed: {
+
+        uploadTag() {
+            return `cms-element-text-config-${this.element.id}`;
+        }
+    },
     created() {
         this.createdComponent();
     },
 
     methods: {
         createdComponent() {
-            this.initElementConfig('ict-text');
+            this.initElementConfig('text');
         },
 
         onBlur(content) {

@@ -5,7 +5,11 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <!-- Resolver -->
-        <service id="ICTTheme\Core\Content\Media\Cms\ImageCmsElementResolver">
+        <service id="ICTTheme\Core\Content\Media\Cms\ICTImageCmsElementResolver">
+            <tag name="shopware.cms.data_resolver" />
+            <argument type="service" id="Shopware\Core\Content\Media\Cms\DefaultMediaResolver"/>
+        </service>
+        <service id="ICTTheme\Core\Content\Media\Cms\IctechImageTextLeftRightPositionCmsElementResolver">
             <tag name="shopware.cms.data_resolver" />
             <argument type="service" id="Shopware\Core\Content\Media\Cms\DefaultMediaResolver"/>
         </service>

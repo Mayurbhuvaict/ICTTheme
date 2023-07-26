@@ -1,6 +1,6 @@
 {
     "sw-cms": {
-        "component":{
+        "component": {
             "detail": {
                 "label": {
                     "ictElement": "Thema Option"
@@ -12,19 +12,34 @@
                 "label": "Benutzerdefinierte Kategorie-Navigation"
             },
             "ictTextImage": {
-                "ictImageTextBubble": {
+                "ictSwitchImageTextBubble": {
                     "label": "Text mit linkem oder rechtem Bild"
                 }
             },
             "ictCategoryImageText": {
                 "label": "Kategorie Bild Text"
+            },
+            "IctText": {
+                "label": "ICT Text"
             }
         },
         "elements": {
             "ictImages": {
                 "label": "ICT Image"
             },
-            "disabledConfigInfoTextKey": "Die Produktdaten für dieses Element werden automatisch über die Kategoriezuweisungen befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
+            "ictText": {
+                "label": "ICT-Texte"
+            },
+            "ictSwitchImageText": {
+                "config": {
+                    "label": {
+                        "ictTextImage": "Bild Position",
+                        "imageLeft": "Links",
+                        "imageRight": "Rechts"
+                    },
+                    "disabledConfigInfoTextKey": "Die Produktdaten für dieses Element werden automatisch über die Kategoriezuweisungen befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
+                }
+            }
         }
     }
 }

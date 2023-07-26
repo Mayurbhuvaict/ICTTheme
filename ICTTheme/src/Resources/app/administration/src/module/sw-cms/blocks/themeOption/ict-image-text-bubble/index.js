@@ -29,7 +29,7 @@ Shopware.Service('cmsService').registerCmsBlock({
     },
     slots: {
         'lef-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -57,7 +57,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'left-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -87,7 +87,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'left1-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -117,7 +117,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'center-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -145,7 +145,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'center1-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -174,7 +174,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'right-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
@@ -186,8 +186,6 @@ Shopware.Service('cmsService').registerCmsBlock({
                 },
             },
         },
-
-
         'right1-image': {
             type: 'ict-image',
             default: {
@@ -204,7 +202,7 @@ Shopware.Service('cmsService').registerCmsBlock({
             },
         },
         'right1-text': {
-            type: 'text',
+            type: 'ict-text',
             default: {
                 config: {
                     content: {
