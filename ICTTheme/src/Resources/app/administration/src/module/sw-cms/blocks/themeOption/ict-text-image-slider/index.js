@@ -1,7 +1,7 @@
 import CMS from '../../../constant/sw-cms.constant';
 
-Shopware.Component.register('sw-cms-block-gaisbock-text-image-slider',()=>import('./component'));
-Shopware.Component.register('sw-cms-preview-gaisbock-text-image-slider',()=>import('./preview'));
+Shopware.Component.register('sw-cms-block-ict-text-image-slider',()=>import('./component'));
+Shopware.Component.register('sw-cms-preview-ict-text-image-slider',()=>import('./preview'));
 
 Shopware.Service('cmsService').registerCmsBlock({
     name:'ict-text-image-slider',
@@ -17,7 +17,7 @@ Shopware.Service('cmsService').registerCmsBlock({
         sizingMode: 'boxed',
     },
     slots:{
-        gaisbockTextImageSlider:{
+        ictTextImageSlider:{
             type:'ict-text-image-slider',
             default: {
                 config: {

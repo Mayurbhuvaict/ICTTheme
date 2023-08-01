@@ -58,7 +58,7 @@ export default {
 
     methods: {
         async createdComponent() {
-            this.initElementConfig('gaisbock-text-image-slider');
+            this.initElementConfig('ict-text-image-slider');
 
             if (this.element.config.autoSlide?.value) {
                 this.showSlideConfig = true;

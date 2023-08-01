@@ -6,7 +6,7 @@ Shopware.Service('cmsService').registerCmsElement({
     name:'ict-text-image-slider',
     label:'sw-cms.blocks.gaisbockTextImageSlider.label',
     component:'sw-cms-el-ict-text-image-slider',
-    previewComponent:'sw-cms-preview-ict-text-image-slider',
+    previewComponent:'sw-cms-el-preview-ict-text-image-slider',
     configComponent:'sw-cms-el-config-ict-text-image-slider',
     defaultConfig:{
         sliderItems: {

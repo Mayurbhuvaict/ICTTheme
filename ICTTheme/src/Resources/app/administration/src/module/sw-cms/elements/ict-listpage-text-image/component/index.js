@@ -1,6 +1,6 @@
 import CMS from '../../../constant/sw-cms.constant';
 import template from './sw-cms-el-ict-listpage-text-image.html.twig';
-import './sw-cms-el-gaisbock-ict-text-image.scss';
+import './sw-cms-el-ict-listpage-text-image.scss';
 const { Mixin, Filter } = Shopware;
 export default {
     template,

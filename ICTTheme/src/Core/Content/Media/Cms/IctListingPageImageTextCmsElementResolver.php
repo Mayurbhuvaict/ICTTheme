@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Gaisbock\Core\Content\Media\Cms;
+namespace ICTTheme\Core\Content\Media\Cms;
 
 use Shopware\Core\Content\Cms\Aggregate\CmsSlot\CmsSlotEntity;
 use Shopware\Core\Content\Cms\DataResolver\CriteriaCollection;
