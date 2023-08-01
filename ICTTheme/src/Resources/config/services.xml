@@ -17,6 +17,14 @@
             <tag name="shopware.cms.data_resolver" />
             <argument type="service" id="Shopware\Core\Content\Media\Cms\DefaultMediaResolver"/>
         </service>
+
+        <!-- Start Text Data Resolver-->
+        <service id="ICTTheme\Core\Content\Media\Cms\ICTTextOnImageCmsElementResolver">
+            <tag name="shopware.cms.data_resolver" />
+            <argument type="service" id="Shopware\Core\Framework\Util\HtmlSanitizer"/>
+        </service>
+        <!-- End Text Data Resolver-->
+
         <!-- Resolver -->
         <!-- subscriber  -->
         <service id="ICTTheme\Storefront\Page\IctThemeCategoryNavigationSubscriber">
