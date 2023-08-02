@@ -24,6 +24,12 @@
         "ictSwitchImageTextBubble": {
           "label": "Text with Left or Right Image"
         }
+      },
+      "ictCustomTextOnImage": {
+        "label": "Text on Image"
+      },
+      "ictAboutTitleTextImage" : {
+        "label": "About title text Image"
       }
     },
     "elements": {
@@ -69,6 +75,26 @@
           },
           "mediaFields": {
             "bgTitle": "Images"
+          }
+        }
+      },
+      "ictCustomTextOnImage": {
+        "config": {
+          "uploadMediaCaption": "Upload Media",
+          "label": "Add background image"
+        }
+      },
+      "ictAboutTitleTextImage": {
+        "config": {
+          "label" : {
+            "titleLabel": "Title",
+            "titleImage": "Image",
+            "descriptionLabel": "Description",
+            "aboutImage": "About image",
+            "imagePosition": "Image Position",
+            "imageLeft": "Left",
+            "imageRight": "Right",
+            "uploadMediaCaption": "Upload Media"
           }
         }
       }

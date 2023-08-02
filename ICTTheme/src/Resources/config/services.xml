@@ -29,6 +29,11 @@
         </service>
         <!-- End Text Data Resolver-->
 
+        <service id="ICTTheme\Core\Content\Media\Cms\ICTAboutTitleTextImageCmsElementResolver">
+            <tag name="shopware.cms.data_resolver" />
+            <argument type="service" id="Shopware\Core\Framework\Util\HtmlSanitizer"/>
+        </service>
+
         <!-- Resolver -->
         <!-- subscriber  -->
         <service id="ICTTheme\Storefront\Page\IctThemeCategoryNavigationSubscriber">
