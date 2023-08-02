@@ -8,6 +8,7 @@ import './module/sw-cms/blocks/themeOption/ict-listpage-text-image';
 import './module/sw-cms/blocks/themeOption/ict-switch-image-text';
 import './module/sw-cms/blocks/themeOption/ict-custom-text-on-image';
 import './module/sw-cms/blocks/themeOption/ict-custom-text-image-slider';
+import './module/sw-cms/blocks/themeOption/ict-about-title-text-image';
 
 
 import './module/sw-cms/component';
@@ -22,3 +23,4 @@ import './module/sw-cms/elements/ict-text-image-slider';
 import './module/sw-cms/elements/ict-listpage-text-image';
 import './module/sw-cms/elements/ict-custom-text-on-image';
 import './module/sw-cms/elements/ict-custom-text-image-slider';
+import './module/sw-cms/elements/ict-about-title-text-image';

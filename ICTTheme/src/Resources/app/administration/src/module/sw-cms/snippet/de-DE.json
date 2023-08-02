@@ -21,6 +21,12 @@
             },
             "IctText": {
                 "label": "ICT Text"
+            },
+            "ictCustomTextOnImage": {
+                "label": "Text auf Bild"
+            },
+            "ictAboutTitleTextImage" : {
+                "label": "Über Titeltext Bild"
             }
         },
         "elements": {
@@ -60,6 +66,25 @@
                     },
                     "mediaFields": {
                         "bgTitle": "Bilder"
+                    }
+                }
+            },
+            "ictCustomTextOnImage": {
+                "config": {
+                    "uploadMediaCaption": "Medien hochladen",
+                    "label": "Hintergrundbild hinzufügen"
+                }
+            },
+            "ictAboutTitleTextImage": {
+                "config": {
+                    "label" : {
+                        "titleLabel": "Titel",
+                        "titleImage": "Bild",
+                        "descriptionLabel": "Beschreibung",
+                        "aboutImage": "Über Bild",
+                        "imagePosition": "Bildposition",
+                        "imageLeft": "Links",
+                        "imageRight": "Rechts"
                     }
                 }
             }
