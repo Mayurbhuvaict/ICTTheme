@@ -48,6 +48,29 @@
           },
           "disabledConfigInfoTextKey": "This element's navigation data is automatically loaded by the category associated with this layout. The content just shows a sample preview."
         }
+      },
+      "ictCustomTextImageSlider": {
+        "learnMore": "Learn More...",
+        "config": {
+          "tab": {
+            "settings": "Settings",
+            "images": "Images"
+          },
+          "textFields": {
+            "contentTitle": "Title",
+            "subTitle": "Sub Title",
+            "detailTitle": "Detail",
+            "TextImagePosition": "Text Image Position",
+            "TextBeforeImage": "Text Before Image",
+            "TextAfterImage": "Text After Image",
+            "TextImagePositionPlaceholder": "Please Select",
+            "coverImage": "Cover Image",
+            "description": "Description"
+          },
+          "mediaFields": {
+            "bgTitle": "Images"
+          }
+        }
       }
     }
   }

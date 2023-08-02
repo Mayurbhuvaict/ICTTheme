@@ -39,6 +39,29 @@
                     },
                     "disabledConfigInfoTextKey": "Die Produktdaten für dieses Element werden automatisch über die Kategoriezuweisungen befüllt. Der Inhalt zeigt nur eine ungefähre Vorschau."
                 }
+            },
+            "ictCustomTextImageSlider": {
+                "learnMore": "Erfahren Sie mehr...",
+                "config": {
+                    "tab": {
+                        "settings": "Einstellungen",
+                        "images": "Bilder"
+                    },
+                    "textFields": {
+                        "contentTitle": "Titel",
+                        "subTitle": "Untertitel",
+                        "detailTitle": "Detail",
+                        "TextImagePosition": "Textbildposition",
+                        "TextBeforeImage": "Text vor Bild",
+                        "TextAfterImage": "Text nach Bild",
+                        "TextImagePositionPlaceholder": "Bitte auswählen",
+                        "coverImage": "Titelbild",
+                        "description": "Beschreibung"
+                    },
+                    "mediaFields": {
+                        "bgTitle": "Bilder"
+                    }
+                }
             }
         }
     }

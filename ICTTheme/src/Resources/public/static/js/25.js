@@ -1,0 +1,1 @@
+(this["webpackJsonpPlugini-c-t-theme"]=this["webpackJsonpPlugini-c-t-theme"]||[]).push([[25],{ePFy:function(t,e,c){"use strict";c.r(e);e.default={template:'{% block sw_cms_block_ict_theme_category_image_text %}\n    <div class="sw-cms-block-category-image-text">\n        <slot name="ictCategoryImage"></slot>\n    </div>\n{% endblock %}'}}}]);

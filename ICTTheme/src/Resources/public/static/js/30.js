@@ -1,0 +1,1 @@
+(this["webpackJsonpPlugini-c-t-theme"]=this["webpackJsonpPlugini-c-t-theme"]||[]).push([[30],{fPaJ:function(e,t,s){"use strict";s.r(t);t.default={template:'{% block sw_cms_block_gaisbock_text_image_slider %}\n    <div class="sw-cms-block-gaisbock-text-image-slider">\n        <slot name="ictTextImageSlider"></slot>\n    </div>\n{% endblock %}'}}}]);
