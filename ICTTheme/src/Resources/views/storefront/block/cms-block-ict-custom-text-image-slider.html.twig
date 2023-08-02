@@ -1,0 +1,38 @@
+{% block cms_block_ict_custom_text_image_slider %}
+    {% set element = block.slots.getSlot('ictCustomTextImageSlider') %}
+
+    <div class="row ict-custom-text-image-slider-component-image-text-separate-grid {{ element.config.TextImagePosition.value != null ? element.config.TextImagePosition.value : 'TextBeforeImage' }}">
+        <div class="col ict-custom-text-image-slider-component-cover-image-block">
+            <div class="col ict-custom-text-image-slider-component-cover-image-block-media">
+                <img src="{{ element.config.coverUrl.value }}" alt="coverImage"/>
+            </div>
+        </div>
+        <div class="col ict-custom-text-image-slider-component-text-block">
+            <div class="ict-custom-text-image-slider-component-text-block-contentTitle">
+                <b>{{ element.config.contentTitle.value }}</b>
+            </div>
+
+            <div class="ict-custom-text-image-slider-component-text-block-subTitle">
+                <b>{{ element.config.subTitle.value }}</b>
+            </div>
+
+            <div class="ict-custom-text-image-slider-component-text-block-detailTitle">
+                {{ element.config.detailTitle.value }}
+            </div>
+            <div class="ict-custom-text-image-slider-component-text-block-readMore">
+                Read More...
+            </div>
+
+            {% set columns = 1 %}
+            <div class="ict-custom-text-image-slider-component-media-slider">
+                <div class="col-12" data-cms-element-id="{{ element.id }}">
+                    {% block cms_block_ict_custom_text_image_slider_inner %}
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
